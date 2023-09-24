@@ -47,7 +47,7 @@ const StockInfoPage: React.FC = () => {
       <InfoPageSearchBar />
       <StockInfoBasic stockPk={stockPk} />
       <StockInfoSummary />
-      <StockInfoDetail graphValue={graphValue}/>
+      <StockInfoDetail stockPk={stockPk} graphValue={graphValue}/>
     </div>
   );
 };
