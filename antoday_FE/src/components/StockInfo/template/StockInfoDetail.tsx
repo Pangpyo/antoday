@@ -6,7 +6,11 @@ import StockInformation from "../module/StockInformation";
 import RevenueAndProfit from "../module/RevenueAndProfit";
 import StockWordCloud from "../module/StockWordCloud";
 
-const StockInfoDetail: React.FC = () => {
+interface StockInfoDetailProps {
+  graphValue?: string;
+}
+
+const StockInfoDetail: React.FC<StockInfoDetailProps> = ({ graphValue }) => {
   const tab1Ref = useRef<HTMLDivElement>(null);
   const tab2Ref = useRef<HTMLDivElement>(null);
   const tab3Ref = useRef<HTMLDivElement>(null);
@@ -79,7 +83,7 @@ const StockInfoDetail: React.FC = () => {
       <StockInformation />
       <hr />
       <div ref={tab3Ref}>
-        <RevenueAndProfit />
+        <RevenueAndProfit graphValue={graphValue}/>
       </div>
       <hr />
       <div ref={tab4Ref}>
