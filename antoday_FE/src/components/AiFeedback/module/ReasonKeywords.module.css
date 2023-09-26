@@ -1,0 +1,27 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: start;
+}
+
+.keywordstyles {
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid var(--main-blue-color);
+  padding: 0.3rem 0.5rem;
+  font-size: var(--font-h6);
+  color: var(--main-blue-color);
+  border-radius: 50px;
+  margin-right: 0.5rem;
+}
+
+.title {
+  font-size: var(--font-h5);
+}
+
+@media screen and (max-width: 380px) {
+  .title {
+    font-size: var(--font-h6);
+  }
+}
